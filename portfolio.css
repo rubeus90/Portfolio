@@ -12,10 +12,10 @@ html {
   height: 100%;
 }
 body {
-  display: table;
   background: #d2527f;
 }
 nav {
+  z-index: 2;
   background: #2c3e50;
   position: fixed;
   width: 100%;
@@ -55,7 +55,8 @@ nav ul li a:hover,
 nav ul li a:active {
   color: #d2527f;
 }
-.line {
+.line,
+.line-alternative {
   padding: 0;
   border: none;
   border-top: solid 5px;
@@ -63,14 +64,32 @@ nav ul li a:active {
   max-width: 250px;
   margin: 25px auto 0px;
 }
-.line:after {
+.line:after,
+.line-alternative:after {
   content: "\2605";
   display: inline-block;
   position: relative;
   top: -0.8em;
   font-size: 2em;
   padding: 0 0.25em;
+  z-index: 1;
+}
+.line {
+  color: #ffffff;
+}
+.line:after {
   background: #d2527f;
+}
+.line-alternative {
+  color: #2c3e50;
+}
+.line-alternative:after {
+  background: #ffffff;
+}
+.centered {
+  display: table;
+  width: 100%;
+  height: 100%;
 }
 .intro {
   display: table-cell;
@@ -87,6 +106,30 @@ nav ul li a:active {
 .intro .description {
   font-size: 1.2rem;
 }
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 50px 0 0 0;
+  text-transform: uppercase;
+}
 .wrapper {
   background: #ffffff;
+}
+.wrapper h1 {
+  color: #2c3e50;
+}
+.wrapper article {
+  width: 32%;
+  float: left;
+  margin: 0 0 2% 2%;
+}
+.wrapper article:nth-of-type( 3n + 1) {
+  clear: left;
+  margin-left: 0;
+}
+.wrapper .centered {
+  background: #ffffff;
+  width: 80%;
+  margin: auto;
 }
