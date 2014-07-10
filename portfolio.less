@@ -5,18 +5,6 @@
 @alternativeTextColor: #2C3E50;
 @titleSize: 2rem;
 
-.article(@num : 3, @margin : 2%) {
-	article{
-		width: ( 100% - @margin * (@num - 1) ) / @num;
-		float:left;
-		margin: 0 0 @margin @margin;
-	}
-	article:nth-of-type(@{num}n+1) {
-		clear: left;
-		margin-left: 0;
-	}
-}
-
 
 *{
 	margin: 0;
@@ -55,9 +43,9 @@ nav{
 	}	
 	ul{		
 		float: right;
+		list-style: none;
 		li {
-		    float: left;
-		    list-style: none;
+		    float: left;		    
 		    line-height: 20px;
 		    text-align: center;
 		    a {
@@ -136,15 +124,50 @@ h1{
 	text-transform: uppercase;
 }
 
-.wrapper{
+.article(@num : 3, @margin : 2%) {
+	article{
+		width: ( 100% - @margin * (@num - 1) ) / @num;
+		float:left;
+		margin: 0 0 @margin @margin;
+	}
+	article:nth-of-type(@{num}n+1) {
+		clear: left;
+		margin-left: 0;
+	}
+}
+
+.projects{
 	background: @alternativeColor;
+	padding-bottom: 40px;
 	h1{
 		color: @alternativeTextColor;
 	}
-	.article(3);
 	.centered{
-		background: @alternativeColor;
-		width: 80%;
+		background: inherit;
+		width: 70%;
 		margin: auto;
+		.article(3);
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.about{
+	background: @principalColor;
+	color: @textColor;
+	padding-bottom: 40px;
+	.centered{
+		background: inherit;
+		width: 60%;
+		margin: auto;
+		.article(2);
+		article{
+			text-align: center;
+			p{
+				padding: 10px 0;
+			}
+		}
 	}
 }

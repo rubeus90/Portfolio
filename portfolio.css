@@ -36,10 +36,10 @@ nav .logo:active {
 }
 nav ul {
   float: right;
+  list-style: none;
 }
 nav ul li {
   float: left;
-  list-style: none;
   line-height: 20px;
   text-align: center;
 }
@@ -113,23 +113,53 @@ h1 {
   padding: 50px 0 0 0;
   text-transform: uppercase;
 }
-.wrapper {
+.projects {
   background: #ffffff;
+  padding-bottom: 40px;
 }
-.wrapper h1 {
+.projects h1 {
   color: #2c3e50;
 }
-.wrapper article {
+.projects .centered {
+  background: inherit;
+  width: 70%;
+  margin: auto;
+}
+.projects .centered article {
   width: 32%;
   float: left;
   margin: 0 0 2% 2%;
 }
-.wrapper article:nth-of-type( 3n + 1) {
+.projects .centered article:nth-of-type( 3n + 1) {
   clear: left;
   margin-left: 0;
 }
-.wrapper .centered {
-  background: #ffffff;
-  width: 80%;
+.projects .centered img {
+  display: block;
+  width: 100%;
+}
+.about {
+  background: #d2527f;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+.about .centered {
+  background: inherit;
+  width: 60%;
   margin: auto;
+}
+.about .centered article {
+  width: 49%;
+  float: left;
+  margin: 0 0 2% 2%;
+}
+.about .centered article:nth-of-type( 2n + 1) {
+  clear: left;
+  margin-left: 0;
+}
+.about .centered article {
+  text-align: center;
+}
+.about .centered article p {
+  padding: 10px 0;
 }
