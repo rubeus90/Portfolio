@@ -68,6 +68,9 @@ if(isset($_POST['send'])){
 		<div class="centered">
 			<article>
 				<a href="http://slatch.alwaysdata.net/"><img src="img/slatch.jpg"></a>
+				<div class="hidden">
+					<h3>Slatch</h3>
+				</div>
 			</article>
 			<article>
 				<a href="https://github.com/rubeus90/WonderRSS"><img src="img/wonderrss.png"></a>
