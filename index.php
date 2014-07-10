@@ -68,16 +68,16 @@ if(isset($_POST['send'])){
 		<hr class="line-alternative">
 		<div class="centered">
 			<article>
-				<img src="img/slatch.jpg">
+				<a href="http://slatch.alwaysdata.net/"><img src="img/slatch.jpg"></a>
 			</article>
 			<article>
-				<img src="img/slatch.jpg">
+				<a href="https://github.com/rubeus90/WonderRSS"><img src="img/wonderrss.png"></a>
 			</article>
 			<article>
-				<img src="img/slatch.jpg">
+				<a href="https://github.com/rubeus90/WonderCom"><img src="img/wondercom.png"></a>
 			</article>
 			<article>
-				<img src="img/slatch.jpg">
+				<a href="https://github.com/rubeus90/WonderShop"><img src="img/wondershop.jpg"></a>
 			</article>
 		</div>		
 	</section>	
@@ -88,7 +88,7 @@ if(isset($_POST['send'])){
 		<div class="centered">
 			<article>
 				<p>I study Computer Science at ESIEE Paris, a French engineering school. I've just finished my 4th year and I've done my internship at Nanyang Polytechnic, Singapore.</p>
-				<p>I have good skills in Android programing, Java, C and C++. I've done several projects with Java JSP, PHP and MySQL.</p>
+				<p>I have good skills in Android programing, Java, C and C++. I've done several projects with Java JSP, J2E, PHP and MySQL.</p>
 			</article>
 			<article>
 				<p>I want to become an Android developer at the end of my studies.</p>
