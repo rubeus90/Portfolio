@@ -64,34 +64,36 @@ nav ul li a:active {
   max-width: 250px;
   margin: 25px auto 0px;
 }
-.line:after,
-.line-alternative:after {
-  content: "\2605";
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
-  z-index: 1;
-}
 .line {
   color: #ffffff;
 }
 .line:after {
   background: #d2527f;
+  content: url(img/android.png);
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  padding: 0 0.25em;
+  z-index: 1;
 }
 .line-alternative {
   color: #2c3e50;
 }
 .line-alternative:after {
   background: #ffffff;
+  content: url(img/android-alt.png);
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  padding: 0 0.25em;
+  z-index: 1;
 }
 .centered {
   display: table;
   width: 100%;
   height: 100%;
 }
-.intro {
+.centered .intro {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
@@ -99,11 +101,11 @@ nav ul li a:active {
   text-align: center;
   color: #ffffff;
 }
-.intro .name {
+.centered .intro .name {
   text-transform: uppercase;
   font-size: 3.8rem;
 }
-.intro .description {
+.centered .intro .description {
   font-size: 1.2rem;
 }
 h1 {
@@ -116,8 +118,6 @@ h1 {
 .projects {
   background: #ffffff;
   padding-bottom: 40px;
-}
-.projects h1 {
   color: #2c3e50;
 }
 .projects .centered {
@@ -139,7 +139,6 @@ h1 {
   width: 100%;
 }
 .about {
-  background: #d2527f;
   color: #ffffff;
   padding-bottom: 40px;
 }
@@ -162,4 +161,56 @@ h1 {
 }
 .about .centered article p {
   padding: 10px 0;
+}
+.contact {
+  background: #ffffff;
+  padding-bottom: 40px;
+  color: #2c3e50;
+}
+.contact .centered {
+  width: 50%;
+  margin: auto;
+}
+.contact .centered input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 10px;
+}
+.contact .centered input:focus {
+  outline: none;
+}
+.contact .centered textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 10px;
+}
+.contact .centered textarea:focus {
+  outline: none;
+}
+.contact .centered button {
+  display: block;
+  width: 20%;
+  padding: 15px 0;
+  background: #d2527f;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.contact .centered button:hover {
+  background: #bf3263;
+}
+.contact .centered button:active {
+  background: #97274e;
+}
+footer {
+  width: 100%;
+  background: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8rem;
 }
