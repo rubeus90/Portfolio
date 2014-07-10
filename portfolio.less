@@ -1,0 +1,93 @@
+@principalColor: #D2527F;
+@navColor: #2C3E50;
+@textColor: #FFFFFF;
+
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: 0;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 20px;
+}
+
+body, html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	display: table;
+	background: @principalColor;
+}
+
+.line{
+	padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+
+.line:after{
+	content: "\f005";
+	font-family: 'Oxygen', sans-serif;
+    display: inline-block;
+    position: relative; 
+    top: -0.8em;  
+    font-size: 2em;
+    padding: 0 0.25em;
+}
+
+nav{
+	background: @navColor;
+	position: fixed;
+	width: 100%;	
+	padding: 20px 0;	
+	.logo{
+		line-height: 20px;
+		margin-left: 20px;
+		font-size: 1.5rem;
+		&:link, &:visited{
+			color: @textColor;
+		}
+		&:hover, &:active{
+			color: @principalColor;
+		}		
+	}	
+	ul{		
+		float: right;
+		li {
+		    float: right;
+		    list-style: none;
+		    line-height: 20px;
+		    a {
+			    display: inline-block;
+			    width: 100px;
+			    &:link, &:visited{
+					color: @textColor;
+				}
+				&:hover, &:active{
+					color: @principalColor;
+				}
+			}		
+		}
+	}
+}
+
+.intro{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: @textColor;	
+	.name{
+		font-size: 4rem;
+	}
+	.description{
+		font-size: 1.2rem;
+	}
+}

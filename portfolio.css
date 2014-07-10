@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: table;
+  background: #d2527f;
+}
+.line {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+.line:after {
+  content: "\f005";
+  font-family: 'Oxygen', sans-serif;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+nav {
+  background: #2c3e50;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+}
+nav .logo {
+  line-height: 20px;
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+nav .logo:link,
+nav .logo:visited {
+  color: #ffffff;
+}
+nav .logo:hover,
+nav .logo:active {
+  color: #d2527f;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  float: right;
+  list-style: none;
+  line-height: 20px;
+}
+nav ul li a {
+  display: inline-block;
+  width: 100px;
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: #ffffff;
+}
+nav ul li a:hover,
+nav ul li a:active {
+  color: #d2527f;
+}
+.intro {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+.intro .name {
+  font-size: 4rem;
+}
+.intro .description {
+  font-size: 1.2rem;
+}
