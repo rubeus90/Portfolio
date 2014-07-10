@@ -3,13 +3,28 @@ if(isset($_POST['send'])){
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
-}
-$regex_mail = '#^[\w-_.]+@[\w_-.]+\.[a-z]{2,4}$#i';
-if(preg_match($regex_mail, $email)){
-	echo $email;
-}
-else{
-	echo 'faux';
+
+	$regex_mail = '/^[\w.-_]+@[\w._-]+\.[a-z]{2,4}$/i';
+	if(!preg_match($regex_mail, $email)){
+		echo "<script>alert('Your entered email address is not valid')</script>";
+	}
+	else{
+		$destination = 'rubeus90@gmail.com';
+		$msg = 'Message from your portfolio page:'."\r\n\r\n";
+		$msg .= 'Sender: '.$name."\r\n\r\n";
+		$msg .= 'Email: '.$email."\r\n\r\n";
+		$msg .= 'Message:'."\r\n".$message;
+
+		$headers = 'From: '.$name.' at '.$email."\r\n\r\n";
+
+		if(mail($destination, 'Contact from nguyen-hong-ngoc.com', $msg, $headers)){
+			echo "<script>alert('Your message has been sent successfully')</script>";
+		}
+		else{
+			echo "<script>alert('Message sending failed: please try again!')</script>";
+		}
+		unset($_POST['send']);
+	}
 }
 ?>
 
@@ -87,7 +102,7 @@ else{
 		<h1>Contact me</h1>
 		<hr class="line-alternative">	
 		<div class="centered">
-			<form action="index.html" method="post">
+			<form action="index.php" method="post">
 				<input type="text" name="name" placeholder="Name" required>
 				<input type="email" name="email" placeholder="Email address" required>
 				<textarea rows="5" name="message" placeholder="Message" required></textarea>
