@@ -1,0 +1,227 @@
+@principalColor: #D2527F;
+@navColor: #2C3E50;
+@alternativeColor: #FFFFFF;
+@textColor: #FFFFFF;
+@alternativeTextColor: #2C3E50;
+@titleSize: 2rem;
+@darkColor: darken(@principalColor, 10%);
+@darkerColor: darken(@darkColor, 10%);
+@gray-lighter: lighten(#000, 93.5%);
+
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: 0;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 20px;
+}
+
+body, html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: @principalColor;
+}
+
+nav{
+	z-index: 2;
+	background: @navColor;
+	position: fixed;
+	width: 100%;	
+	padding: 20px 0;	
+	.logo{
+		line-height: 20px;
+		margin-left: 20px;
+		font-size: 1.5rem;
+		&:link, &:visited{
+			color: @textColor;
+		}
+		&:hover, &:active{
+			color: @principalColor;
+		}		
+	}	
+	ul{		
+		float: right;
+		list-style: none;
+		li {
+		    float: left;		    
+		    line-height: 20px;
+		    text-align: center;
+		    a {
+			    display: inline-block;
+			    width: 100px;
+			    &:link, &:visited{
+					color: @textColor;
+				}
+				&:hover, &:active{
+					color: @principalColor;
+				}
+			}		
+		}
+	}
+}
+
+.line, .line-alternative{
+	padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 0px;
+}
+
+.line{		
+	color: @textColor;
+	&:after{
+		background: @principalColor;
+		content:  url(img/android.png);
+	    display: inline-block;
+	    position: relative; 
+	    top: -0.8em;  
+	    padding: 0 0.25em;	    
+	    z-index: 1;
+	}
+}
+
+.line-alternative{	
+	color: @alternativeTextColor;
+	&:after{
+		background: @alternativeColor;
+		content:  url(img/android-alt.png);
+	    display: inline-block;
+	    position: relative; 
+	    top: -0.8em;  
+	    padding: 0 0.25em;	    
+	    z-index: 1;
+	}
+}
+
+.centered{
+	display: table;
+	width: 100%;
+	height: 100%;
+	#intro{
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		color: @textColor;	
+		.name{
+			text-transform: uppercase;
+			font-size: 3.8rem;
+		}
+		.description{
+			font-size: 1.2rem;
+		}
+	}
+}
+
+h1{
+	width: 100%;
+	text-align: center;
+	font-size: @titleSize;
+	padding: 50px 0 0 0;
+	text-transform: uppercase;
+}
+
+.article(@num : 3, @margin : 2%) {
+	article{
+		width: ( 100% - @margin * (@num - 1) ) / @num;
+		float:left;
+		margin: 0 0 @margin @margin;
+	}
+	article:nth-of-type(@{num}n+1) {
+		clear: left;
+		margin-left: 0;
+	}
+}
+
+#projects{
+	background: @alternativeColor;
+	padding-bottom: 40px;
+	color: @alternativeTextColor;
+	.centered{
+		background: inherit;
+		width: 70%;
+		margin: auto;
+		.article(3);
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+#about{
+	color: @textColor;
+	padding-bottom: 40px;
+	.centered{
+		background: inherit;
+		width: 60%;
+		margin: auto;
+		.article(2);
+		article{
+			text-align: center;
+			p{
+				padding: 10px 0;
+			}
+		}
+	}
+}
+
+#contact{
+	background: @alternativeColor;
+	padding-bottom: 40px;
+	color: @alternativeTextColor;
+	.centered{
+		width: 50%;
+		margin: auto;
+		input{
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-top: 1px solid @gray-lighter;
+			margin-bottom: 10px;
+			outline: none;
+		}
+		textarea{			 
+			resize: none;
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-top: 1px solid @gray-lighter;
+			margin-bottom: 10px;
+			outline: none;
+		}
+		
+		button{
+			display: block;
+			width: 20%;
+			padding: 15px 0;
+			background: @principalColor;
+			color: @textColor;
+			border-radius: 8px;
+			outline: none;
+			&:hover{
+				background: @darkColor;
+			}
+			&:active{
+				background: @darkerColor;
+			}
+		}
+	}
+}
+
+footer{
+	width: 100%;
+	background: @navColor;
+	color: @textColor;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 0.8rem;
+}

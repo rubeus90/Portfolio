@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #d2527f;
+}
+nav {
+  z-index: 2;
+  background: #2c3e50;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+}
+nav .logo {
+  line-height: 20px;
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+nav .logo:link,
+nav .logo:visited {
+  color: #ffffff;
+}
+nav .logo:hover,
+nav .logo:active {
+  color: #d2527f;
+}
+nav ul {
+  float: right;
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  line-height: 20px;
+  text-align: center;
+}
+nav ul li a {
+  display: inline-block;
+  width: 100px;
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: #ffffff;
+}
+nav ul li a:hover,
+nav ul li a:active {
+  color: #d2527f;
+}
+.line,
+.line-alternative {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 0px;
+}
+.line {
+  color: #ffffff;
+}
+.line:after {
+  background: #d2527f;
+  content: url(img/android.png);
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  padding: 0 0.25em;
+  z-index: 1;
+}
+.line-alternative {
+  color: #2c3e50;
+}
+.line-alternative:after {
+  background: #ffffff;
+  content: url(img/android-alt.png);
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  padding: 0 0.25em;
+  z-index: 1;
+}
+.centered {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.centered #intro {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+.centered #intro .name {
+  text-transform: uppercase;
+  font-size: 3.8rem;
+}
+.centered #intro .description {
+  font-size: 1.2rem;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 50px 0 0 0;
+  text-transform: uppercase;
+}
+#projects {
+  background: #ffffff;
+  padding-bottom: 40px;
+  color: #2c3e50;
+}
+#projects .centered {
+  background: inherit;
+  width: 70%;
+  margin: auto;
+}
+#projects .centered article {
+  width: 32%;
+  float: left;
+  margin: 0 0 2% 2%;
+}
+#projects .centered article:nth-of-type( 3n + 1) {
+  clear: left;
+  margin-left: 0;
+}
+#projects .centered img {
+  display: block;
+  width: 100%;
+}
+#about {
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+#about .centered {
+  background: inherit;
+  width: 60%;
+  margin: auto;
+}
+#about .centered article {
+  width: 49%;
+  float: left;
+  margin: 0 0 2% 2%;
+}
+#about .centered article:nth-of-type( 2n + 1) {
+  clear: left;
+  margin-left: 0;
+}
+#about .centered article {
+  text-align: center;
+}
+#about .centered article p {
+  padding: 10px 0;
+}
+#contact {
+  background: #ffffff;
+  padding-bottom: 40px;
+  color: #2c3e50;
+}
+#contact .centered {
+  width: 50%;
+  margin: auto;
+}
+#contact .centered input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 10px;
+  outline: none;
+}
+#contact .centered textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 10px;
+  outline: none;
+}
+#contact .centered button {
+  display: block;
+  width: 20%;
+  padding: 15px 0;
+  background: #d2527f;
+  color: #ffffff;
+  border-radius: 8px;
+  outline: none;
+}
+#contact .centered button:hover {
+  background: #bf3263;
+}
+#contact .centered button:active {
+  background: #97274e;
+}
+footer {
+  width: 100%;
+  background: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
