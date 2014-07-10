@@ -70,6 +70,7 @@ if(isset($_POST['send'])){
 				<a href="http://slatch.alwaysdata.net/"><img src="img/slatch.jpg"></a>
 				<div class="hidden">
 					<h3>Slatch</h3>
+					<p>A 2D turn-by-turn stategic game</p>
 				</div>
 			</article>
 			<article>
