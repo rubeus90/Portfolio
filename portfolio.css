@@ -93,7 +93,7 @@ nav ul li a:active {
   width: 100%;
   height: 100%;
 }
-.centered .intro {
+.centered #intro {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
@@ -101,11 +101,11 @@ nav ul li a:active {
   text-align: center;
   color: #ffffff;
 }
-.centered .intro .name {
+.centered #intro .name {
   text-transform: uppercase;
   font-size: 3.8rem;
 }
-.centered .intro .description {
+.centered #intro .description {
   font-size: 1.2rem;
 }
 h1 {
@@ -115,63 +115,63 @@ h1 {
   padding: 50px 0 0 0;
   text-transform: uppercase;
 }
-.projects {
+#projects {
   background: #ffffff;
   padding-bottom: 40px;
   color: #2c3e50;
 }
-.projects .centered {
+#projects .centered {
   background: inherit;
   width: 70%;
   margin: auto;
 }
-.projects .centered article {
+#projects .centered article {
   width: 32%;
   float: left;
   margin: 0 0 2% 2%;
 }
-.projects .centered article:nth-of-type( 3n + 1) {
+#projects .centered article:nth-of-type( 3n + 1) {
   clear: left;
   margin-left: 0;
 }
-.projects .centered img {
+#projects .centered img {
   display: block;
   width: 100%;
 }
-.about {
+#about {
   color: #ffffff;
   padding-bottom: 40px;
 }
-.about .centered {
+#about .centered {
   background: inherit;
   width: 60%;
   margin: auto;
 }
-.about .centered article {
+#about .centered article {
   width: 49%;
   float: left;
   margin: 0 0 2% 2%;
 }
-.about .centered article:nth-of-type( 2n + 1) {
+#about .centered article:nth-of-type( 2n + 1) {
   clear: left;
   margin-left: 0;
 }
-.about .centered article {
+#about .centered article {
   text-align: center;
 }
-.about .centered article p {
+#about .centered article p {
   padding: 10px 0;
 }
-.contact {
+#contact {
   background: #ffffff;
   padding-bottom: 40px;
   color: #2c3e50;
 }
-.contact .centered {
+#contact .centered {
   width: 50%;
   margin: auto;
 }
-.contact .centered input {
+#contact .centered input {
   display: block;
   width: 100%;
   padding: 10px;
@@ -179,7 +179,7 @@ h1 {
   margin-bottom: 10px;
   outline: none;
 }
-.contact .centered textarea {
+#contact .centered textarea {
   resize: none;
   display: block;
   width: 100%;
@@ -188,7 +188,7 @@ h1 {
   margin-bottom: 10px;
   outline: none;
 }
-.contact .centered button {
+#contact .centered button {
   display: block;
   width: 20%;
   padding: 15px 0;
@@ -197,10 +197,10 @@ h1 {
   border-radius: 8px;
   outline: none;
 }
-.contact .centered button:hover {
+#contact .centered button:hover {
   background: #bf3263;
 }
-.contact .centered button:active {
+#contact .centered button:active {
   background: #97274e;
 }
 footer {
