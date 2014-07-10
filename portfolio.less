@@ -28,17 +28,17 @@ body{
     border-top: solid 5px;
     text-align: center;
     max-width: 250px;
-    margin: 25px auto 30px;
+    margin: 25px auto 0px;
 }
 
 .line:after{
-	content: "\f005";
-	font-family: 'Oxygen', sans-serif;
+	content: "\2605";
     display: inline-block;
     position: relative; 
     top: -0.8em;  
     font-size: 2em;
     padding: 0 0.25em;
+    background: @principalColor;
 }
 
 nav{
@@ -60,7 +60,7 @@ nav{
 	ul{		
 		float: right;
 		li {
-		    float: right;
+		    float: left;
 		    list-style: none;
 		    line-height: 20px;
 		    a {
@@ -85,7 +85,8 @@ nav{
 	text-align: center;
 	color: @textColor;	
 	.name{
-		font-size: 4rem;
+		text-transform: uppercase;
+		font-size: 3.8rem;
 	}
 	.description{
 		font-size: 1.2rem;
