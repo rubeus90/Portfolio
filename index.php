@@ -110,6 +110,19 @@ if(isset($_POST['send'])){
 		</div>		
 	</section>
 
+	<section id="more">
+		<div class="centered">
+			<article>
+				<h2>Find me on Github</h2>
+				<a href="https://github.com/rubeus90"><img src="img/github.png"></a>
+			</article>
+			<article>
+				<h2>Download my CV</h2>
+				<a href=""><img src="img/cv.png"></a>
+			</article>
+		</div>
+	</section>
+
 	<footer>Nguyen Hong Ngoc © 2014</p>
 	</footer>
 </body>

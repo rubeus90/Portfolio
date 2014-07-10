@@ -179,9 +179,34 @@ h1 {
 #contact .centered button:active {
   background: #97274e;
 }
+#more {
+  background: #2c3e50;
+  padding-bottom: 40px;
+}
+#more .centered {
+  background: inherit;
+  margin: auto;
+  display: table;
+  table-layout: fixed;
+  width: 60%;
+}
+#more .centered article {
+  display: table-cell;
+}
+#more .centered article h2 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding: 35px 0;
+}
+#more .centered article img {
+  width: 100px;
+  margin: auto;
+  display: block;
+}
 footer {
   width: 100%;
-  background: #2c3e50;
+  background: #1a242f;
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
