@@ -177,8 +177,6 @@ h1 {
   padding: 10px;
   border-top: 1px solid #eeeeee;
   margin-bottom: 10px;
-}
-.contact .centered input:focus {
   outline: none;
 }
 .contact .centered textarea {
@@ -188,8 +186,6 @@ h1 {
   padding: 10px;
   border-top: 1px solid #eeeeee;
   margin-bottom: 10px;
-}
-.contact .centered textarea:focus {
   outline: none;
 }
 .contact .centered button {
@@ -199,6 +195,7 @@ h1 {
   background: #d2527f;
   color: #ffffff;
   border-radius: 8px;
+  outline: none;
 }
 .contact .centered button:hover {
   background: #bf3263;
