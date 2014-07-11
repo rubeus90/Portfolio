@@ -70,17 +70,29 @@ if(isset($_POST['send'])){
 				<a href="http://slatch.alwaysdata.net/"><img src="img/slatch.jpg"></a>
 				<div class="hidden">
 					<h3>Slatch</h3>
-					<p>A 2D turn-by-turn stategic game</p>
+					<p>A 2D turn-by-turn based stategy game developed for both PC and Android platform</p>
 				</div>
 			</article>
 			<article>
 				<a href="https://github.com/rubeus90/WonderRSS"><img src="img/wonderrss.png"></a>
+				<div class="hidden">
+					<h3>WonderRSS</h3>
+					<p>An Android RSS reader with adaptative layout for phones and tablets</p>
+				</div>
 			</article>
 			<article>
 				<a href="https://github.com/rubeus90/WonderCom"><img src="img/wondercom.png"></a>
+				<div class="hidden">
+					<h3>WonderCom</h3>
+					<p>An Android chat and collaborative application using Wifi-Direct</p>
+				</div>
 			</article>
 			<article>
 				<a href="https://github.com/rubeus90/WonderShop"><img src="img/wondershop.jpg"></a>
+				<div class="hidden">
+					<h3>WonderShop</h3>
+					<p>A music store with modern and intuitive interface</p>
+				</div>
 			</article>
 		</div>		
 	</section>	

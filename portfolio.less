@@ -29,7 +29,7 @@ body{
 }
 
 nav{
-	z-index: 2;
+	z-index: 10;
 	background: @navColor;
 	position: fixed;
 	width: 100%;	
@@ -124,10 +124,28 @@ h1{
 		height: auto;
 		margin: auto;
 		.article(3);
-		img{
-			display: block;
-			width: 100%;
-		}
+		article{
+			.hidden{
+				display: none;
+			}
+			a{
+				img{
+					display: block;
+					width: 100%;
+					z-index: 2;
+				}
+				&:hover{
+					article > .hidden{
+						display: block;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 3;
+					}
+				}
+			}
+		}		
 	}
 }
 

@@ -15,7 +15,7 @@ body {
   background: #d2527f;
 }
 nav {
-  z-index: 2;
+  z-index: 10;
   background: #2c3e50;
   position: fixed;
   width: 100%;
@@ -108,9 +108,21 @@ h1 {
   clear: left;
   margin-left: 0;
 }
-#projects .centered img {
+#projects .centered article .hidden {
+  display: none;
+}
+#projects .centered article a img {
   display: block;
   width: 100%;
+  z-index: 2;
+}
+#projects .centered article a:hover article > .hidden {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 #about {
   color: #ffffff;
