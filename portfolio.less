@@ -8,6 +8,7 @@
 @darkerColor: darken(@darkColor, 10%);
 @gray-lighter: lighten(#000, 93.5%);
 @darkerNav: darken(@navColor, 10%);
+@transparentBackground: fade(@navColor, 90%);
 
 
 *{
@@ -125,23 +126,38 @@ h1{
 		margin: auto;
 		.article(3);
 		article{
-			.hidden{
-				display: none;
-			}
+			position: relative;
 			a{
 				img{
 					display: block;
 					width: 100%;
-					z-index: 2;
-				}
-				&:hover{
-					article > .hidden{
-						display: block;
+					z-index: 1;
+				}	
+				.hidden{
+					display: none;
+				}			
+				&:hover .hidden{
+					z-index: 3;
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: @transparentBackground;
+					color: @textColor;
+					h3{
 						width: 100%;
+						text-align: center;
+						padding: 15px 0;
+						font-size: 1.5rem;
+					}
+					p{
+						font-size: 0.8rem;
+						padding: 0 20px;
 						position: absolute;
-						top: 0;
-						left: 0;
-						z-index: 3;
+						top: 40%;
+						text-align: center;
 					}
 				}
 			}

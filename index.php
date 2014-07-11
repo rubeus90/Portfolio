@@ -67,32 +67,40 @@ if(isset($_POST['send'])){
 		<img class="line" src="img/line-alternative.png">
 		<div class="centered">
 			<article>
-				<a href="http://slatch.alwaysdata.net/"><img src="img/slatch.jpg"></a>
-				<div class="hidden">
-					<h3>Slatch</h3>
-					<p>A 2D turn-by-turn based stategy game developed for both PC and Android platform</p>
-				</div>
+				<a href="http://slatch.alwaysdata.net/">
+					<div class="hidden">
+						<h3>Slatch</h3>
+						<p>A 2D turn-by-turn based stategy game developed for both PC and Android platform</p>
+					</div>
+					<img src="img/slatch.jpg">					
+				</a>
 			</article>
 			<article>
-				<a href="https://github.com/rubeus90/WonderRSS"><img src="img/wonderrss.png"></a>
-				<div class="hidden">
-					<h3>WonderRSS</h3>
-					<p>An Android RSS reader with adaptative layout for phones and tablets</p>
-				</div>
+				<a href="https://github.com/rubeus90/WonderRSS">
+					<img src="img/wonderrss.png">
+					<div class="hidden">
+						<h3>WonderRSS</h3>
+						<p>An Android RSS reader with adaptative layout for phones and tablets</p>
+					</div>
+				</a>
 			</article>
 			<article>
-				<a href="https://github.com/rubeus90/WonderCom"><img src="img/wondercom.png"></a>
-				<div class="hidden">
-					<h3>WonderCom</h3>
-					<p>An Android chat and collaborative application using Wifi-Direct</p>
-				</div>
+				<a href="https://github.com/rubeus90/WonderCom">
+					<img src="img/wondercom.png">
+					<div class="hidden">
+						<h3>WonderCom</h3>
+						<p>An Android chat and collaborative application using Wifi-Direct</p>
+					</div>
+				</a>
 			</article>
 			<article>
-				<a href="https://github.com/rubeus90/WonderShop"><img src="img/wondershop.jpg"></a>
-				<div class="hidden">
-					<h3>WonderShop</h3>
-					<p>A music store with modern and intuitive interface</p>
-				</div>
+				<a href="https://github.com/rubeus90/WonderShop">
+					<img src="img/wondershop.jpg">
+					<div class="hidden">
+						<h3>WonderShop</h3>
+						<p>A music store with modern, intuitive and adaptative design</p>
+					</div>
+				</a>
 			</article>
 		</div>		
 	</section>	
