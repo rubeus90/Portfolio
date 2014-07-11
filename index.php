@@ -23,7 +23,6 @@ if(isset($_POST['send'])){
 		else{
 			echo "<script>alert('Message sending failed: please try again!')</script>";
 		}
-		unset($_POST['send']);
 	}
 }
 ?>
@@ -56,16 +55,16 @@ if(isset($_POST['send'])){
 	
 	<div class="centered">
 		<section id="intro">
-			<img src="./img/ngocky.png">
+			<img src="img/ngocky.png">
 			<p class="name">Nguyen Hong Ngoc</p>
-			<hr class="line">
+			<img class="line" src="img/line.png">
 			<p class="description">Computer Science student at ESIEE Paris, Android developer</p>
 		</section>
 	</div>				
 
 	<section id="projects">
 		<h1>Portfolio</h1>
-		<hr class="line-alternative">
+		<img class="line" src="img/line-alternative.png">
 		<div class="centered">
 			<article>
 				<a href="http://slatch.alwaysdata.net/"><img src="img/slatch.jpg"></a>
@@ -84,7 +83,7 @@ if(isset($_POST['send'])){
 
 	<section id="about">
 		<h1>About me</h1>
-		<hr class="line">
+		<img class="line" src="img/line.png">
 		<div class="centered">
 			<article>
 				<p>I study Computer Science at ESIEE Paris, a French engineering school. I've just finished my 4th year and I've done my internship at Nanyang Polytechnic, Singapore.</p>
@@ -100,7 +99,7 @@ if(isset($_POST['send'])){
 
 	<section id="contact">
 		<h1>Contact me</h1>
-		<hr class="line-alternative">	
+		<img class="line" src="img/line-alternative.png">
 		<div class="centered">
 			<form action="index.php" method="post">
 				<input type="text" name="name" placeholder="Name" required>
