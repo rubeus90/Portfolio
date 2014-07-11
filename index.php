@@ -54,17 +54,17 @@ if(isset($_POST['send'])){
 	</nav>
 	
 	<div class="centered">
-		<section id="intro">
-			<img src="img/ngocky.png">
+		<div id="intro">
+			<img src="img/ngocky.png" alt="avatar">
 			<p class="name">Nguyen Hong Ngoc</p>
-			<img class="line" src="img/line.png">
+			<img class="line" src="img/line.png" alt="line">
 			<p class="description">Computer Science student at ESIEE Paris, Android developer</p>
-		</section>
+		</div>
 	</div>				
 
 	<section id="projects">
 		<h1>Portfolio</h1>
-		<img class="line" src="img/line-alternative.png">
+		<img class="line" src="img/line-alternative.png" alt="line">
 		<div class="centered">
 			<article>
 				<a href="http://slatch.alwaysdata.net/">
@@ -72,12 +72,12 @@ if(isset($_POST['send'])){
 						<h3>Slatch</h3>
 						<p>A 2D turn-by-turn based stategy game developed for both PC and Android platform</p>
 					</div>
-					<img src="img/slatch.jpg">					
+					<img src="img/slatch.jpg" alt="slatch">					
 				</a>
 			</article>
 			<article>
 				<a href="https://github.com/rubeus90/WonderRSS">
-					<img src="img/wonderrss.png">
+					<img src="img/wonderrss.png" alt="wonderrss">
 					<div class="hidden">
 						<h3>WonderRSS</h3>
 						<p>An Android RSS reader with adaptative layout for phones and tablets</p>
@@ -86,7 +86,7 @@ if(isset($_POST['send'])){
 			</article>
 			<article>
 				<a href="https://github.com/rubeus90/WonderCom">
-					<img src="img/wondercom.png">
+					<img src="img/wondercom.png" alt="wondercom">
 					<div class="hidden">
 						<h3>WonderCom</h3>
 						<p>An Android chat and collaborative application using Wifi-Direct</p>
@@ -95,7 +95,7 @@ if(isset($_POST['send'])){
 			</article>
 			<article>
 				<a href="https://github.com/rubeus90/WonderShop">
-					<img src="img/wondershop.jpg">
+					<img src="img/wondershop.jpg" alt="wondershop">
 					<div class="hidden">
 						<h3>WonderShop</h3>
 						<p>A music store with modern, intuitive and adaptative design</p>
@@ -107,7 +107,7 @@ if(isset($_POST['send'])){
 
 	<section id="about">
 		<h1>About me</h1>
-		<img class="line" src="img/line.png">
+		<img class="line" src="img/line.png" alt="line">
 		<div class="centered">
 			<article>
 				<p>I study Computer Science at ESIEE Paris, a French engineering school. I've just finished my 4th year and I've done my internship at Nanyang Polytechnic, Singapore.</p>
@@ -123,7 +123,7 @@ if(isset($_POST['send'])){
 
 	<section id="contact">
 		<h1>Contact me</h1>
-		<img class="line" src="img/line-alternative.png">
+		<img class="line" src="img/line-alternative.png" alt="line">
 		<div class="centered">
 			<form action="index.php" method="post">
 				<input type="text" name="name" placeholder="Name" required>
@@ -134,21 +134,20 @@ if(isset($_POST['send'])){
 		</div>		
 	</section>
 
-	<section id="more">
+	<div id="more">
 		<div class="centered">
 			<article>
 				<h2>Find me on Github</h2>
-				<a href="https://github.com/rubeus90"><img src="img/github.png"></a>
+				<a href="https://github.com/rubeus90"><img src="img/github.png" alt="github"></a>
 			</article>
 			<article>
 				<h2>Download my CV</h2>
-				<a href=""><img src="img/cv.png"></a>
+				<a href=""><img src="img/cv.png" alt="cv"></a>
 			</article>
 		</div>
-	</section>
+	</div>
 
-	<footer>Nguyen Hong Ngoc © 2014</p>
-	</footer>
+	<footer>Nguyen Hong Ngoc © 2014</footer>
 </body>
 
 </html>
