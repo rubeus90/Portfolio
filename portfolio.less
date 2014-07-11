@@ -9,6 +9,8 @@
 @gray-lighter: lighten(#000, 93.5%);
 @darkerNav: darken(@navColor, 10%);
 @transparentBackground: fade(@navColor, 90%);
+@time: 0.3s;
+@anim: ease;
 
 
 *{
@@ -132,13 +134,8 @@ h1{
 					display: block;
 					width: 100%;
 					z-index: 1;
-				}	
-				.hidden{
-					display: none;
-				}			
-				&:hover .hidden{
-					z-index: 3;
-					display: block;
+				}				
+				.hidden{					
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -146,6 +143,9 @@ h1{
 					height: 100%;
 					background: @transparentBackground;
 					color: @textColor;
+					z-index: 3;
+					opacity: 0;
+					transition: all @time @anim;
 					h3{
 						width: 100%;
 						text-align: center;
@@ -159,6 +159,9 @@ h1{
 						top: 40%;
 						text-align: center;
 					}
+				}
+				&:hover .hidden{
+					opacity: 1;
 				}
 			}
 		}		
