@@ -148,6 +148,8 @@ if(isset($_POST['send'])){
 	</div>
 
 	<footer>Nguyen Hong Ngoc © 2014</footer>
+
+	<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
