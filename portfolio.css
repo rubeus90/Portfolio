@@ -133,8 +133,8 @@ nav ul li a:active {
     display: none;
   }
   .centered #intro img {
-    height: 40%;
-    width: auto;
+    width: 20%;
+    height: auto;
   }
 }
 h1 {
