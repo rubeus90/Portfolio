@@ -39,6 +39,7 @@ if(isset($_POST['send'])){
     <meta name="geo.placename" content="Noisy, France, Paris">
 
     <link href="portfolio.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width" />
     <link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
 </head>
 
