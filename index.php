@@ -150,7 +150,8 @@ if(isset($_POST['send'])){
 
 	<footer>Nguyen Hong Ngoc © 2014</footer>
 
-	<script type="text/javascript" src="script.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">var word="";document.addEventListener("keypress",function(e){word+=String.fromCharCode(e.keyCode),"ngocky"==word&&alert("hey")},!1),$('a[href^="#"]').on("click",function(e){var t=$($(this).attr("href"));t.length&&(e.preventDefault(),$("html, body").animate({scrollTop:t.offset().top},600))});</script>
 </body>
 
 </html>
