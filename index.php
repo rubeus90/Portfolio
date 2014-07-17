@@ -33,7 +33,7 @@ if(isset($_POST['send'])){
 <head>
 	<title>Hong Ngoc Nguyen</title>
 	<meta charset="utf-8" />
-	<meta name="description" content="I'm Nguyen Hong Ngoc, a Computer Science student at ESIEE and an Android developer">
+	<meta name="description" content="I'm Nguyen Hong Ngoc, a Computer Science student at ESIEE Paris engineering school and an Android developer">
     <meta name="author" content="Nguyen Hong Ngoc">
     <meta name="keywords" content="nguyen hong ngoc, nguyen, hong, ngoc, ESIEE, etudiant, etudiante, student, developer, developpeur, android, mobile, portfolio, projects, slatch, wondercom, wondershop, wonderrss">
     <meta name="geo.placename" content="Noisy, France, Paris">
