@@ -143,7 +143,7 @@ if(isset($_POST['send'])){
 			</article>
 			<article>
 				<h2>Download my CV</h2>
-				<a href=""><img src="img/cv.png" alt="cv"></a>
+				<a href="cv.pdf"><img src="img/cv.png" alt="cv"></a>
 			</article>
 		</div>
 	</div>
