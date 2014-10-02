@@ -9,7 +9,7 @@ if(isset($_POST['send'])){
 		echo "<script>alert('Your entered email address is not valid')</script>";
 	}
 	else{
-		$destination = 'rubeus90@gmail.com';
+		$destination = 'nghongngoc90@gmail.com';
 		$msg = 'Message from your portfolio page:'."\r\n\r\n";
 		$msg .= 'Sender: '.$name."\r\n\r\n";
 		$msg .= 'Email: '.$email."\r\n\r\n";
