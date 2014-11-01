@@ -104,6 +104,15 @@ if(isset($_POST['send'])){
 					</div>
 				</a>
 			</article>
+			<article>
+				<a href="https://github.com/rubeus90/WonderBudget">
+					<img src="img/wonderbudget.jpg" alt="wonderbudget">
+					<div class="hidden">
+						<h3>WonderBudget</h3>
+						<p>An Android budget manager with simple and modern design</p>
+					</div>
+				</a>
+			</article>
 		</div>		
 	</section>	
 
