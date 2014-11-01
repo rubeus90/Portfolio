@@ -49,6 +49,7 @@ if(isset($_POST['send'])){
 			<li><a href="#projects">Portfolio</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#contact">Contact</a></li>
+			<li><a href="#more">More</a></li>
 		</ul>	
 		<a class="logo" href="#intro">Nguyen Hong Ngoc</a>
 
@@ -112,7 +113,7 @@ if(isset($_POST['send'])){
 		<div class="centered">
 			<article>
 				<p>I study Computer Science at ESIEE Paris, a French engineering school. I've just finished my 4th year and I've done my internship at Nanyang Polytechnic, Singapore.</p>
-				<p>I have good skills in Android programing, Java, C and C++. I've done several projects with Java JSP, J2E, PHP and MySQL.</p>
+				<p>I have good skills in Android programing, Java, C, C++ and C#. I've done several projects with Java J2EE, PHP and MySQL.</p>
 			</article>
 			<article>
 				<p>I want to become an Android developer at the end of my studies.</p>

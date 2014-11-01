@@ -36,6 +36,11 @@ nav {
     font-size: 0.8rem;
   }
 }
+@media screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+}
 @media screen and (min-width: 501px) {
   nav .logo {
     line-height: 20px;
@@ -49,11 +54,6 @@ nav {
   nav .logo:hover,
   nav .logo:active {
     color: #d2527f;
-  }
-}
-@media screen and (max-width: 500px) {
-  nav .logo {
-    display: none;
   }
 }
 nav ul {
